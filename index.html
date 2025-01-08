@@ -17,8 +17,8 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;background-
 .header p{color:var(--text-color);opacity:0.8;max-width:600px;margin:0 auto}
 .minifier-container{background-color:var(--container-bg);border-radius:12px;padding:1.5rem;box-shadow:0 4px 20px rgba(0,0,0,0.1)}
 .textarea-container{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem;margin-bottom:1rem}
-pre{margin:0;padding:1.25rem;background:var(--bg-color) !important;border-radius:8px;border:1px solid var(--border-color);width:100%;height:400px;overflow-y:auto;resize:none}
-code{font-size:0.95rem !important;line-height:1.5 !important;background:none !important}
+pre{margin:0;padding:1.25rem;background:var(--bg-color) !important;border-radius:8px;border:1px solid var(--border-color);width:100%;height:400px;overflow-y:auto;resize:none;padding:10px}
+code{font-size:0.95rem !important;line-height:1.5 !important;background:none !important;}
 [contenteditable="true"]{outline:none;white-space:pre-wrap !important;overflow-wrap:break-word !important}
 pre::-webkit-scrollbar{width:8px}
 pre::-webkit-scrollbar-track{background:var(--container-bg);border-radius:4px}
@@ -29,7 +29,7 @@ h3{color:var(--heading-color);margin-bottom:2rem;font-size:1.25rem}
 .checkbox-container{display:flex;align-items:center;gap:0.75rem;margin-right:1rem;background:var(--bg-color);padding:0.5rem 1rem;border-radius:6px;border:1px solid var(--border-color)}
 button{background:var(--primary-color);color:white;border:none;padding:0.5rem 1rem;border-radius:6px;cursor:pointer;display:flex;align-items:center;gap:0.5rem;font-size:0.9rem;transition:all 0.2s}
 button:hover{transform:translateY(-1px);box-shadow:0 4px 12px rgba(74,144,226,0.2)}
-.darkmode-toggle{position:fixed;top:1.5rem;right:1.5rem; z-index:99;}
+.darkmode-toggle{position:fixed;top:1.5rem;right:1.5rem;z-index:99;}
 .darkmode-toggle-container{width:60px;height:30px;position:relative;display:block;background:#ebebeb;border-radius:30px;box-shadow:inset 0 2px 6px rgba(0,0,0,0.4),inset 0 -2px 6px rgba(255,255,255,0.4);cursor:pointer}
 .darkmode-toggle-container:after{content:"";width:24px;height:24px;position:absolute;top:3px;left:3px;background:linear-gradient(180deg,#ffcc89,#d8860b);border-radius:50%;transition:.3s;box-shadow:0 2px 4px rgba(0,0,0,0.2)}
 .darkmode-toggle-container svg{position:absolute;width:16px;height:16px;top:7px;z-index:1}
@@ -77,18 +77,18 @@ footer{text-align:center;padding:2rem;margin-top:3rem;border-top:1px solid var(-
             <div class="textarea-container">
     <div>
         <h3>Input CSS</h3>
-        <pre class="line-numbers"><code class="language-css" id="css-input" contenteditable="true" spellcheck="false">/* Paste your CSS code here */
-.example-class {
-    color: #333;
-    padding: 20px;
-    margin: 10px;
-}
-
-/* Another section */
-.another-class {
-    background: #fff;
-    border: 1px solid #ddd;
-}</code></pre>
+        <pre><code class="language-css" id="css-input" contenteditable="true" spellcheck="false">/* Paste your CSS code here */
+            .example-class {
+                color: #333;
+                padding: 20px;
+                margin: 10px;
+            }
+            
+            /* Another section */
+            .another-class {
+                background: #fff;
+                border: 1px solid #ddd;
+            }</code></pre>
     </div>
     <div>
         <div class="controls-header">
