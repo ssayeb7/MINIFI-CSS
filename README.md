@@ -1,4 +1,4 @@
-# CSS Minifier
+# Mini CSS
 
 ![CSS Minifier Preview](Screenshot.jpg)
 
